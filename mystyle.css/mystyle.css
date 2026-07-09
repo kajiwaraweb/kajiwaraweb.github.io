@@ -1,0 +1,169 @@
+@charset "UTF-8";
+
+body {
+    font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+    background-color: #faf8f5;
+    color: #333333;
+    line-height: 1.8;
+}
+
+header h1 {
+    font-size: 26px;
+    color: #e65c00;
+    border-bottom: 3px solid #e65c00;
+    padding-bottom: 10px;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.15);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.top-nav {
+    background-color: #e65c00;
+    padding: 10px 0;
+    border-radius: 6px;
+    margin-bottom: 25px;
+}
+
+.top-nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.top-nav li {
+    display: inline;
+}
+
+.top-nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 5px 10px;
+    transition: color 0.3s;
+}
+
+.top-nav a:hover {
+    color: #ffebcc;
+}
+
+article h1 {
+    font-size: 22px;
+    color: #333333;
+}
+
+h2 {
+    font-size: 18px;
+    color: #e65c00;
+    border-left: 5px solid #e65c00;
+    padding-left: 10px;
+}
+
+strong {
+    color: #e65c00;
+    background: linear-gradient(transparent 60%, #ffebcc 60%);
+}
+
+.info-box {
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.contact {
+    font-size: 14px;
+    color: #666666;
+    background-color: #ffffff;
+    padding: 4px 8px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+}
+
+footer {
+    margin-top: 40px;
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #dddddd;
+}
+
+.main-img {
+    border-radius: 12px;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.recipe-list {
+    list-style-type: square;
+    padding-left: 20px;
+}
+.breadcrumb {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0 20px 0;
+    font-size: 14px;
+}
+
+.breadcrumb li {
+    display: inline;
+}
+
+.breadcrumb li+li:before {
+    content: " ＞ ";
+    color: #888888;
+}
+
+.float-left-img {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+/* --- リンクの状態別のスタイル設定 --- */
+a:link {
+    color: #e65c00;
+}
+a:visited {
+    color: #b34700;
+}
+a:active {
+    color: #ff8033;
+}
+
+
+.validator-links {
+    font-size: 13px;
+    margin-top: 10px;
+}
+.validator-links a {
+    color: #666666;
+    text-decoration: underline;
+}
+
+
+@media print {
+    body {
+        background-color: #ffffff;
+        color: #000000;
+        font-size: 12pt;
+    }
+    .top-nav, .page-contents, .return-top, .validator-links {
+        display: none;
+    }
+}
+.dummy {
+    margin: 0;
+}
