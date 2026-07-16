@@ -167,3 +167,16 @@ a:active {
 .dummy {
     margin: 0;
 }
+
+img {
+    border-radius: 8px;
+    transition: transform 0.3s ease; 
+}
+
+img:hover {
+    transform: scale(1.03);
+}
+
+.dummy { 
+margin: 0; 
+} 
